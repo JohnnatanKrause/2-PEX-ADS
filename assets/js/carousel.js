@@ -40,6 +40,9 @@ document.addEventListener('DOMContentLoaded', function () {
             "assets/img/carousel/33.jpg",
             "assets/img/carousel/34.jpg",
             "assets/img/carousel/35.jpg",
+            "assets/img/carousel/36.jpg",
+            "assets/img/carousel/37.jpg",
+            "assets/img/carousel/38.jpg",
         ];
 
         const swiperWrapper = document.querySelector('.service-swiper .swiper-wrapper');
