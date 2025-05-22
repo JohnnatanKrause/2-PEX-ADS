@@ -59,7 +59,6 @@ O projeto está estruturado com os seguintes arquivos/modulares:
 - **`footer.html`** → Contém o rodapé e informações de contato.
 - **`index.html`** → Página inicial com apresentação dos serviços.
 - **`services.html`** → Listagem detalhada dos serviços oferecidos.
-- **`forms/`** → Diretório com formulários para contato e agendamento.
 - **`assets/`** → Contém imagens, ícones e estilos CSS globais.
 
 #### **💡 Benefícios da Modularização**
@@ -91,7 +90,7 @@ O projeto está estruturado com os seguintes arquivos/modulares:
 |--------|-------------------------------------------|
 | 1      | Pesquisa e seleção da plataforma de agendamento |
 | 2      | Integração da plataforma ao site existente |
-| 3      | Configuração dos serviços e preços de reserva |
+| 3      | Configuração dos serviços e de reserva |
 | 4      | Testes de UI/UX e coleta de feedback dos usuários |
 | 5      | Implementação de melhorias e otimização para dispositivos móveis |
 | 6      | Migração para Vercel e ajustes finais |
@@ -109,7 +108,7 @@ O projeto está estruturado com os seguintes arquivos/modulares:
 ## **7. Conclusão**
 A evolução do **Studio Jenni Krause Click** visa solucionar problemas reais, aprimorando a **gestão de horários** e melhorando a **experiência digital dos clientes**. A migração para **Vercel** proporcionará um site mais otimizado e profissional.
 
-🔗 **Acesse a versão atualizada do site**: [studiojenni.vercel.app](https://studiojenni.vercel.app) *(quando disponível)*  
+🔗 **Acesse a versão atualizada do site**: [Studio Jenni Krause](https://studio-jenni-krause.vercel.app) 
 
 ---
   
