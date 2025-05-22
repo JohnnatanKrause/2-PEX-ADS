@@ -112,5 +112,4 @@ A evolução do **Studio Jenni Krause Click** visa solucionar problemas reais, a
 🔗 **Acesse a versão atualizada do site**: [studiojenni.vercel.app](https://studiojenni.vercel.app) *(quando disponível)*  
 
 ---
-
-🔥 Agora é só atualizar o `README.md` no seu repositório! Se precisar de mais ajustes, é só chamar! 😃🚀  
+  
