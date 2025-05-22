@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 prevEl: '.swiper-button-prev',
             },
             autoplay: {
-        delay: 700, // Tempo de transição entre imagens 
+        delay: 7000, // Tempo de transição entre imagens 
         disableOnInteraction: false // Permite que continue após interação manual
     },
             breakpoints: {
