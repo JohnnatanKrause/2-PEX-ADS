@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Studio Jenni Krause - Salão de beleza especializado em transformar sua imagem com elegância e sofisticação.">
+  <title>Studio Jenni Krause - Salão de Beleza</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/navigation.css">
+  <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+  <link rel="stylesheet" href="assets/css/buttons.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/carousel.css"> <!-- Corrigido: sem duplicação -->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"> <!-- Swiper.js -->
+  <link rel="icon" href="assets/img/logo.png" type="image/png">
+
+  <!-- CSS da Biblioteca AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+   <!-- Container para o Cabeçalho -->
+    <div id="header-container"></div>
+
+     <!-- Container para o Menu -->
+    <div id="menu-container"></div>
+
+  <div id="header-placeholder"></div>
+
+
+  <main>
+
+    <!-- Seção Hero -->
+    <section id="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1>Studio Jenni Krause</h1>
+        <p>Somos apaixonados por transformar sua imagem.</p>
+        <a href="contact.html#agendamento" class="btn btn-primary">Agende seu Horário</a>
+      </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="about" class="section-padding" data-aos="fade-up">
+      <div class="container about-container">
+        <div class="about-image" data-aos="fade-right" data-aos-delay="200">
+          <img src="assets/img/about-image.jpg" alt="Interior do Studio Jenni Krause">
+        </div>
+        <div class="about-text" data-aos="fade-left" data-aos-delay="400">
+          <h2>Bem-vindas ao Studio Jenni Krause</h2>
+          <p>Onde elegância e sofisticação encontram a beleza. Nosso salão é o refúgio perfeito para mulheres que
+            apreciam o luxo, o cuidado personalizado e os detalhes que fazem toda a diferença.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Serviços em Destaque -->
+    <section id="featured-services" class="section-padding bg-light" data-aos="fade-up">
+      <div class="container">
+        <div class="section-title">
+          <h2>Serviços em Destaque</h2>
+          <p>Oferecemos serviços personalizados para realçar sua beleza e bem-estar.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-item" data-aos="zoom-in" data-aos-delay="300">
+            <img src="assets/img/service-cortes.jpg" alt="Cortes modernos">
+            <h3>Cortes modernos e personalizados</h3>
+            <p>Cada corte é pensado para valorizar seus traços naturais e garantir um look sofisticado.</p>
+          </div>
+          <div class="service-item" data-aos="zoom-in" data-aos-delay="400">
+            <img src="assets/img/service-escovas.jpg" alt="Escovas e alisamentos">
+            <h3>Escovas e alisamentos para fios sedosos</h3>
+            <p>Transforme seu visual com cabelos impecáveis e radiantes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção do Carrossel -->
+    <section id="carousel-section" class="section-padding">
+      <div class="container">
+        <div class="section-title">
+        <h2>Galeria de Serviços</h2>
+        <div class="service-swiper swiper">
+          <div class="swiper-wrapper">
+            <!-- As imagens serão adicionadas dinamicamente aqui -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        </div>
+        <div class="text-center" style="margin-top: 30px;"> <a href="services.html" class="btn btn-secondary">Ver Todos
+            os Serviços</a> </div>
+      </div>
+    </section>
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+      <img src="assets/img/stats-bg.jpg" alt="">
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts JS -->
+  <script src="assets/js/headerFooterLoad.js"></script>
+  <script src="assets/js/menu.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Corrigido: carregado antes do JS do carrossel -->
+  <script src="assets/js/carousel.js"></script>
+
+  <!-- JavaScript da Biblioteca AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/animations.js"></script>
+<!-- Container para o Rodapé -->
+    <div id="footer-container"></div>
+
+    <script src="headerFooterLoad.js"></script>
+</body>
+
+</html>

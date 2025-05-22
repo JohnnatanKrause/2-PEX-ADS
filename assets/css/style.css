@@ -1,0 +1,128 @@
+/* Global Styles & Variables */
+:root {
+    --primary-color: #B08D57; /* Dourado */
+    --secondary-color: #5D3A5B; /* Vinho/Roxo profundo */
+    --dark-color: #222222;
+    --light-color: #FAF0E6; /* Bege suave / Branco osso */
+    --text-color: #333333;
+    --white-color: #ffffff;
+    --grey-bg-color: #f4f4f4;
+
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Lato', sans-serif;
+
+    --container-width: 1100px;
+    --header-height: 80px; /* Ajuste conforme necessário */
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background-color: var(--light-color);
+    padding-top: var(--header-height); /* Para compensar header fixo */
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+.section-no-padding {
+    padding: 0;
+}
+
+.bg-light {
+    background-color: var(--white-color); /* Ou um cinza muito claro #f9f9f9 */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+/* Linha decorativa abaixo do título da seção */
+.section-title h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 10px auto 0;
+}
+
+.section-title p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Para evitar scroll quando o menu mobile estiver aberto */
+.no-scroll {
+    overflow: hidden;
+}
+
+/* Page Title Section Style */
+.page-title-section {
+    background-color: var(--dark-color); /* Ou uma imagem de fundo sutil */
+    color: var(--light-color);
+    text-align: center;
+}
+.page-title-section h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+.page-title-section p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+.call-to-action {
+    min-height: 400px; /* Ajuste conforme necessário */
+    width: 100%; /* Garante que ocupe toda a largura */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0;
+    margin-right: 0;
+    overflow: hidden;
+}
+.container {
+    max-width: 100%;
+}
+.call-to-action .container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 coluna em telas pequenas */
+    }
+}

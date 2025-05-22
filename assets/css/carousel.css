@@ -1,0 +1,61 @@
+/* Estilos básicos do carrossel */
+.service-swiper {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Configuração do container do Swiper */
+.swiper-wrapper {
+    display: flex;
+}
+
+/* Estilização dos slides */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    width: 100% !important; /* Garante que cada slide ocupe todo o espaço disponível */
+    flex-shrink: 0; /* Impede que os slides se comprimam */
+}
+
+/* Estilização das imagens dentro dos slides */
+.swiper-slide img {
+    width: auto;
+    max-width: 600px;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 10px; /* Garante que a imagem preencha o espaço sem distorcer */
+}
+
+/* Botões de navegação (setas do Swiper) */
+.swiper-button-next, .swiper-button-prev {
+    color: #fff; /* Cor das setas */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Paginação (bolinhas indicadoras do Swiper) */
+.swiper-pagination {
+    position: relative;
+    bottom: 15px;
+}
+
+.swiper-pagination-bullet {
+    background: #fff; /* Cor das bolinhas */
+    opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+    background: #000; /* Destaca a bolinha ativa */
+    opacity: 1;
+}

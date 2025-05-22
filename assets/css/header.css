@@ -1,0 +1,35 @@
+#main-header {
+    background-color: var(--white-color); /* Fundo do header */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    height: 60px; /* Ajuste conforme o tamanho do seu logo */
+    width: auto;
+}
+
+.social-icons-header img {
+    width: 24px; /* Ajuste conforme necessário */
+    height: 24px;
+    margin-left: 15px;
+    transition: opacity 0.3s ease;
+}
+.social-icons-header a:hover img {
+    opacity: 0.7;
+}

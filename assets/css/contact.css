@@ -1,0 +1,49 @@
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.contact-info, .contact-hours {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.contact-info h3, .contact-hours h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.contact-info p, .contact-hours p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+.contact-info p strong {
+    color: var(--dark-color);
+}
+.contact-info a {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+#agendamento h2 {
+    font-size: 2rem;
+    color: var(--dark-color);
+    margin-bottom: 15px;
+}
+#agendamento p {
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#map iframe {
+    display: block; /* Remove espaço extra abaixo do iframe */
+}

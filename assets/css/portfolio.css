@@ -1,0 +1,143 @@
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.portfolio-item a { /* Para o Lightbox */
+    display: block;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Estilo para o overlay do lightbox (se você usar Lightbox2 ou similar) */
+/* Você pode precisar ajustar os seletores se usar outra biblioteca */
+body.lb-disable-scrolling {
+    overflow: hidden;
+}
+.lightboxOverlay {
+    background-color: rgba(0,0,0,0.8) !important;
+}
+.lb-dataContainer {
+    background-color: var(--light-color) !important;
+    border-radius: 0 0 4px 4px !important;
+}
+.lb-caption {
+    color: var(--dark-color) !important;
+    font-weight: bold !important;
+}
+.lb-number {
+    color: var(--text-color) !important;
+}
+.lb-close, .lb-prev, .lb-next {
+    opacity: 0.7 !important;
+    transition: opacity 0.2s !important;
+}
+.lb-close:hover, .lb-prev:hover, .lb-next:hover {
+    opacity: 1 !important;
+}
+/* assets/css/portfolio.css */
+
+/* Estilo para o container do Swiper */
+.portfolio-swiper {
+    width: 100%;
+    padding-top: 20px; /* Espaço para a paginação se estiver acima */
+    padding-bottom: 50px; /* Espaço para a paginação e botões de navegação */
+    position: relative; /* Importante para posicionar botões/paginação */
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff; /* Opcional: fundo para os slides */
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Para garantir que a imagem não ultrapasse o slide */
+    border-radius: 8px; /* Mesmo radius do .portfolio-item original */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Mesmo shadow do .portfolio-item original */
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 250px; /* Defina uma altura fixa ou use aspect-ratio */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+    transition: transform 0.4s ease; /* Mesma transição do .portfolio-item original */
+}
+
+.swiper-slide a:hover img { /* Se o link <a> ainda estiver presente */
+    transform: scale(1.05); /* Mesmo efeito hover do .portfolio-item original */
+}
+
+
+/* Estilização dos botões de navegação do Swiper (opcional, personalize como quiser) */
+.portfolio-swiper .swiper-button-next,
+.portfolio-swiper .swiper-button-prev {
+    color: var(--primary-color); /* Cor dourada das setas */
+    background-color: rgba(255, 255, 255, 0.7); /* Fundo semi-transparente */
+    border-radius: 50%;
+    width: 40px; /* Ajuste o tamanho */
+    height: 40px; /* Ajuste o tamanho */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.portfolio-swiper .swiper-button-next:hover,
+.portfolio-swiper .swiper-button-prev:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.portfolio-swiper .swiper-button-next::after,
+.portfolio-swiper .swiper-button-prev::after {
+    font-size: 18px; /* Tamanho do ícone da seta */
+    font-weight: bold;
+}
+
+/* Posição dos botões (ajuste se necessário) */
+.portfolio-swiper .swiper-button-prev {
+    left: 10px;
+}
+.portfolio-swiper .swiper-button-next {
+    right: 10px;
+}
+
+/* Estilização da paginação do Swiper (opcional) */
+.portfolio-swiper .swiper-pagination-bullet {
+    background-color: var(--text-color); /* Cor das bolinhas */
+    opacity: 0.5;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.portfolio-swiper .swiper-pagination-bullet-active {
+    background-color: var(--primary-color); /* Cor da bolinha ativa */
+    opacity: 1;
+}
+
+
+/* Lightbox (para garantir que o z-index seja alto o suficiente se houver conflito) */
+.lb-outerContainer {
+    z-index: 99999 !important; /* Um z-index bem alto para o lightbox */
+}
+.lightboxOverlay {
+    z-index: 99998 !important;
+}

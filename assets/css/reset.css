@@ -1,0 +1,32 @@
+/* Simple Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 16px; /* Base font size */
+}
+body {
+    line-height: 1.6;
+    font-family: 'Lato', sans-serif; /* Default body font */
+    color: #333;
+    background-color: #FAF0E6; /* Bege suave de fundo */
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif; /* Default heading font */
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+}
