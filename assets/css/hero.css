@@ -4,10 +4,11 @@
     background: url('../img/hero-bg.jpg') no-repeat center center/cover; /* Sua imagem de fundo */
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-end; /* Alinha o conteúdo ao fundo */
     justify-content: center;
     text-align: center;
     color: var(--white-color);
+    padding-bottom: 40px; /* Espaço do fundo, ajuste conforme necessário */
 }
 
 .hero-overlay {
